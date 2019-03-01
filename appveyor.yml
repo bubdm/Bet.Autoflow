@@ -22,7 +22,7 @@ build_script:
   - ps: dotnet build Bet.Autoflow.sln /p:configuration=Release /p:Version=$($env:appveyor_build_version)
 
 test_script:
-  - dotnet test test/Bet.Autoflow.UnitTest/Bet.Autoflow.UnitTest.csproj -c Release --no-build
+  - dotnet test test/Bet.Autoflow.UnitTest/xUnitTest.csproj -c Release --no-build
 
 artifacts:
 - path: .\src\**\*.nupkg
