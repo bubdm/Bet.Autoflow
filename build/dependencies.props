@@ -1,0 +1,19 @@
+<Project>
+
+  <ItemGroup Label="Shared">
+    <PackageReference Update="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Update="Stateless"  Version="4.2.1"/>
+  </ItemGroup>
+
+  <ItemGroup Label="UnitTests">
+    <PackageReference Update="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Update="Moq" Version="4.10.1" />
+    <PackageReference Update="xunit" Version="2.4.1" />
+    <PackageReference Update="xunit.runner.visualstudio" Version="2.4.1" />
+    <PackageReference Update="Shouldly" Version="3.0.2"/>
+  </ItemGroup>
+
+  <ItemGroup Label="SourceLink">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

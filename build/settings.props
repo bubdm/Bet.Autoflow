@@ -1,0 +1,29 @@
+<Project>
+
+  <PropertyGroup Label="Basic Settings">
+    <VersionPrefix>1.1.0-pre</VersionPrefix>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+    <TieredCompilation>true</TieredCompilation>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Nuget Package Settings">
+    <Description>The Bet.Autoflow is a workflow engine. Enable business processes inside of your code.</Description>
+    <PackageProjectUrl>https://github.com/kdcllc/Bet.Autoflow</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/kdcllc/Bet.Autoflow.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicense>https://github.com/kdcllc/Bet.Autoflow/master/LICENSE</PackageLicense>
+    <PackageIconUrl>https://raw.githubusercontent.com/kdcllc/Bet.Autoflow/master/img/logo64x64.png</PackageIconUrl>
+    <PackageTags>stateless, statemachine, aspnetcore, autoflow,dotnet,workflow</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Label="SourceLink Settings">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+  </PropertyGroup>
+</Project>
